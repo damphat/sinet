@@ -1,17 +1,15 @@
 {
     "name": "sinet",
     "scripts": {
-        "test": "jest",
-        "client": "node-dev client.repl.js",
-        "server": "node-dev server.js"
+        "server": "node-dev server.app.js",
+        "client": "node-dev client.app.js"
     },
     "dependencies": {
+        "@types/jest": "^26.0.19",
+        "@types/socket.io": "^2.1.12",
+        "@types/socket.io-client": "^1.4.34",
+        "jest": "^26.6.3",
         "socket.io": "^2.3.0",
         "socket.io-client": "^2.3.0"
-    },
-    "devDependencies": {
-        "@types/socket.io": "^2.1.12",
-        "jest": "^26.6.3",
-        "node-dev": "^6.2.0"
     }
 }
